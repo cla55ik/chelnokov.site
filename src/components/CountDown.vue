@@ -28,7 +28,7 @@
             <div class="data">
                 {{ seconds }}
             </div>
-            <div class="title">
+            <div class="title" >
                 секунд
             </div>
         </div>
@@ -84,8 +84,31 @@ export default {
 
 <style scoped>
 
-.wrapper{
-    display: flex;
+.item{
+    text-align: center;
+
 }
+
+.data{
+    font-size: 56px;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+@media screen and (min-width:1200px) {
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20%;
+        padding-top: 20px;
+    }
+
+    
+}
+
 
 </style>
