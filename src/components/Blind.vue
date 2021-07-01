@@ -86,7 +86,7 @@ export default {
     @media screen and (min-width:1200px) {
         h1{
             
-            font-size: 72px;
+            font-size: 68px;
             line-height: 84px;
         }
 
@@ -113,7 +113,13 @@ export default {
         .contacts{
             width: 25%;
             margin-left: 5%;
+
+            padding: 25px;
+            border: 2px solid #1A1D23;
+            border-radius: 25px;
         }
+
+          
     }
 
     

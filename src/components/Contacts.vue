@@ -1,6 +1,9 @@
 <template>
-    <div class="contacts">
-        <div v-for="(contact, index) in contacts" v-bind:key="index">
+    <div class="title">
+      <h2>Связаться:</h2>
+    </div>
+    <div class="contact">
+        <div class="item" v-for="(contact, index) in contacts" v-bind:key="index">
             <a :href="contact.link">{{ contact.name }}</a>
         </div>
     </div>
@@ -24,10 +27,22 @@ export default {
 
 <style scoped>
 
-    .contacts{
-        padding: 25px;
-        border: 2px solid #1A1D23;
-        border-radius: 25px;
+
+
+  a{
+    color: #1A1D23;
+    text-decoration: none;
+    
+  }
+
+  .item{
+    margin: 10px 0px;
+  }
+
+  @media screen and (min-width:1200px) {
+    h2{
+      font-size: 24px;
     }
+  }
 
 </style>
