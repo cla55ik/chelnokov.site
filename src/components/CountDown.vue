@@ -72,6 +72,23 @@ export default {
             this.hours = date.getHours();
             this.minutes = date.getMinutes();
             this.seconds = date.getSeconds();
+            if (this.seconds < 10) {
+                this.seconds = '0' + this.seconds;
+                
+            }
+
+            if (this.minutes < 10) {
+                this.minutes = '0' + this.minutes;
+                
+            }
+
+            if (this.hours < 10) {
+                this.minutes = '0' + this.hours;
+            }
+
+            if (this.days < 10) {
+                this.minutes = '0' + this.days;
+            }
            
 
 
@@ -86,11 +103,25 @@ export default {
 
 .item{
     text-align: center;
+    
 
 }
 
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
 .data{
-    font-size: 56px;
+    font-size: 36px;
+    border-radius: 20px;
+    background-color: #1A1D23;
+    padding: 15px;
+    color: white;
+    margin-bottom: 10px;
 }
 
 .title {
@@ -101,12 +132,20 @@ export default {
 
 @media screen and (min-width:1200px) {
     .wrapper{
-        display: flex;
-        justify-content: space-between;
+       
         padding-right: 20%;
         padding-top: 20px;
     }
 
+
+    .data{
+        font-size: 56px;
+        border-radius: 20px;
+        
+        padding: 15px;
+        
+        margin-bottom: 10px;
+    }
     
 }
 

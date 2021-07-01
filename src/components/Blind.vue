@@ -52,9 +52,10 @@ export default {
     
 
     .header{
-        display: flex;
+        display: block;
         align-items: center;
         padding: 50px 0px;
+        text-align: center;
     }
 
     .ivan{
@@ -67,9 +68,10 @@ export default {
     h1{
         
         font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 32px;
+        line-height: 48px;
         margin:0;
+        text-align: center;
     }
 
     p{
@@ -77,23 +79,63 @@ export default {
         font-weight: 300;
         font-size: 20px;
         line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+    .main p{
+        display: none;
     }
 
 
     .content{
-        display: flex;
+        display: block;
+    }
+
+  
+
+    .main{
+        width: 100%;
+    }
+
+    .contacts{
+        text-align: center;
+        width: auto;
+        margin-left: 0%;
+
+        padding: 35px;
+        border: 2px solid #1A1D23;
+        border-radius: 25px;
+    }
+
+    .timer .title{
+        text-align: center;
+        margin-top: 15px;
     }
 
     @media screen and (min-width:1200px) {
+
+         .header{
+            display: flex;
+            align-items: center;
+            padding: 50px 0px;
+            
+        }
+
+
         h1{
             
             font-size: 68px;
             line-height: 84px;
+            text-align: left;
         }
 
         p{
             font-size: 20px;
             line-height: 23px;
+        }
+
+          .main p{
+            display: block;
         }
 
         .ivan{
@@ -105,6 +147,8 @@ export default {
 
         .timer .title{
             margin-top: 70px;
+            text-align: left;
+            
         }
 
         .main{
@@ -112,12 +156,17 @@ export default {
         }
 
         .contacts{
+            text-align: left;
             width: 25%;
             margin-left: 5%;
 
-            padding: 25px;
+            padding: 35px;
             border: 2px solid #1A1D23;
             border-radius: 25px;
+        }
+
+        .content{
+            display: flex;
         }
 
           
