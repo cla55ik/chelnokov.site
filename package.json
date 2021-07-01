@@ -1,6 +1,6 @@
 {
-  "name": "vue3_proj",
-  "version": "0.1.0",
+  "name": "ivan_chelnokov",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

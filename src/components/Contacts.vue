@@ -9,9 +9,9 @@
         </div>
     </div>
     <div class="soсial">
-      <a href=""><img src="~@/assets/img/telegram1.svg" alt=""></a>
-      <a href=""><img src="~@/assets/img/whatsapp.svg" alt=""></a>
-      <a href=""><img src="~@/assets/img/ya_uslugi_.svg" alt=""></a>
+      <a href="https://t.me/ivan_chel" target="_blank"><img src="~@/assets/img/telegram1.svg" alt=""></a>
+      <a href="https://api.whatsapp.com/send/?phone=79081312314" target="_blank"><img src="~@/assets/img/whatsapp.svg" alt=""></a>
+      <a href="https://uslugi.yandex.ru/profile/IvanChelnokov-818193" target="_blank"><img src="~@/assets/img/ya_uslugi_.svg" alt=""></a>
     </div>
 </template>
 
@@ -72,8 +72,9 @@ export default {
       font-size: 24px;
     }
 
-    .social{
-      justify-content: flex-start;
+    .soсial{
+        
+        justify-content: flex-start;
     }
   }
 
