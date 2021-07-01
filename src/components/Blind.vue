@@ -19,7 +19,7 @@
                        До старта осталось:
                    </div>
                    <div class="countdown">
-
+                       <CountDown/>
                    </div>
                </div>
            </div>
@@ -36,11 +36,12 @@
 
 //import Contacts from './components/blind/Contacts.vue' 
 import Contacts from '@/components/Contacts.vue'
+import CountDown from '@/components/CountDown.vue'
 
 export default {
     props:['contacts'],
     components:{
-        Contacts
+        Contacts, CountDown
     }
     
 }
